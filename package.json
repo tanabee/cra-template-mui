@@ -1,0 +1,17 @@
+{
+  "name": "cra-template-mui",
+  "version": "1.0.0",
+  "keywords": ["react", "create-react-app", "template", "material-ui"],
+  "description": "Material UI template for Create React App",
+  "main": "template.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tanabee/cra-template-mui",
+    "directory": "cra-template-mui"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
+  "files": ["template", "template.json"]
+}
