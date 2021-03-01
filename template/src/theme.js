@@ -26,7 +26,7 @@ export const theme = createMuiTheme({
   },
   spacing: 8,
   typography: {
-    h1: { fontSize: 22, fontWeight: 'bold', colog: textPrimary },
+    h1: { fontSize: 22, fontWeight: 'bold', color: textPrimary },
     h2: { fontSize: 20, fontWeight: 'bold', color: textPrimary },
     h3: { fontSize: 18, fontWeight: 'bold', color: textPrimary },
     body1: { fontSize: 16, color: textPrimary },
