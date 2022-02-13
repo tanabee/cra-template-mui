@@ -1,9 +1,10 @@
 {
   "package": {
     "dependencies": {
-      "@material-ui/core": "^4.11.0",
-      "@material-ui/icons": "^4.9.1",
-      "@material-ui/lab": "^4.0.0-alpha.56"
+      "@emotion/react": "^11.x",
+      "@emotion/styled": "^11.x",
+      "@mui/icons-material": "^5.x",
+      "@mui/material": "^5.x"
     }
   }
 }
