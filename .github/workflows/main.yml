@@ -1,0 +1,38 @@
+name: create-react-app
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Checkout main
+        uses: actions/checkout@v2
+        with:
+          ref: main
+
+      - name: Change branch and clean up
+        run: |
+          git checkout -b output
+          git rm -rf .
+          git clean -fxd
+
+      - name: Run create-react-app
+        run: |
+          npm install -g create-react-app
+          create-react-app . --template mui
+
+      - name: Commit and push
+        run: |
+          git config user.email github-actions@github.com 
+          git config user.name github-actions
+          git add -A
+          git commit -m 'Run create-react-app'
+          git push --force origin output
